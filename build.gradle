@@ -30,6 +30,9 @@ dependencies {
   compile 'org.projectlombok:lombok:1.16.6'
   compile 'io.dropwizard:dropwizard-core:' + dropwizardVersion 
   compile 'org.slf4j:slf4j-api:1.7.5'
+  compile ('org.apache.kafka:kafka_2.10:0.8.2.1') {
+  	exclude group: 'org.slf4j'
+  }
   testCompile 'io.dropwizard:dropwizard-testing:' + dropwizardVersion
   testCompile 'io.dropwizard:dropwizard-client:' + dropwizardVersion
   testCompile 'junit:junit:4.+'

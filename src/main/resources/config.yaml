@@ -5,3 +5,9 @@ server:
   adminConnectors:
     - type: http
       port: 9967
+      
+kafka:
+  topic: testTopic
+  servers: localhost:9092
+  keySerializer: org.apache.kafka.common.serialization.ByteArraySerializer
+  valueSerializer: org.apache.kafka.common.serialization.ByteArraySerializer
